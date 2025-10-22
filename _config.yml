@@ -5,7 +5,7 @@ author: 你的名字
 
 # 网站地址（修改成你的用户名）
 url: "https://world2c.github.io"
-baseurl: ""
+baseurl: "/web_test"
 
 # 使用的主题
 theme: minima
