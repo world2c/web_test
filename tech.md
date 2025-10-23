@@ -13,8 +13,8 @@ permalink: /tech/
 {% for post in site.posts %}
   {% if post.categories contains 'tech' %}
 <article style="margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
-  <h2 style="margin-bottom: 10px;">
-    <a href="{{ post.url }}" style="color: #0366d6; text-decoration: none;">
+  <h2>
+    <a href="{{ site.baseurl }}{{ post.url }}" style="color: #0366d6; text-decoration: none;">
       {{ post.title }}
     </a>
   </h2>
@@ -30,7 +30,7 @@ permalink: /tech/
   <p style="color: #333; line-height: 1.6;">
     {{ post.excerpt | strip_html | truncate: 200 }}
   </p>
-  <a href="{{ post.url }}" style="color: #0366d6;">阅读全文 →</a>
+  <a href="{{ site.baseurl }}{{ post.url }}" style="color: #0366d6;">阅读全文 →</a>
 </article>
   {% endif %}
 {% endfor %}
